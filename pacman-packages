@@ -19,6 +19,7 @@ docker-compose
 dolphin
 dosfstools
 egl-wayland
+eza
 fd
 ffmpegthumbs
 firefox
