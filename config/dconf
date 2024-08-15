@@ -1,0 +1,186 @@
+[org/gnome/shell/extensions/arch-update]
+check-cmd="/bin/sh -c \"(/usr/bin/checkupdates; /usr/bin/yay -Qu --color never | sed 's/Get .*//') | sort -u -t' ' -k1,1; /usr/bin/flatpak remote-ls --columns=application -a --updates\""
+check-interval=60
+disable-parsing=true
+update-cmd='kitty --start-as=maximized --title "Update packages" -1 sh -c  "yay; flatpak update; sudo touch /var/lib/pacman/local/flatpak-arch-update; echo Done - Press enter to exit; read"'
+use-buildin-icons=true
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+blur=true
+customize=false
+style-dialogs=3
+
+[org/gnome/shell/extensions/blur-my-shell/applications]
+blur=false
+
+[org/gnome/shell/extensions/blur-my-shell/lockscreen]
+blur=true
+
+[org/gnome/shell/extensions/blur-my-shell/overview]
+blur=true
+style-components=1
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+blur=true
+unblur-in-overview=true
+
+[org/gnome/shell/extensions/blur-my-shell/screenshot]
+blur=true
+
+[org/gnome/shell/extensions/caffeine]
+duration-timer=2
+indicator-position-max=1
+restore-state=true
+show-indicator='only-active'
+toggle-state=true
+user-enabled=true
+
+[org/gnome/shell/extensions/color-picker]
+enable-shortcut=false
+notify-style=uint32 0
+preview-style=uint32 1
+
+[org/gnome/shell/extensions/coverflowalttab]
+animation-time=0.25
+dim-factor=0.5
+easing-function='ease-in-out-circ'
+hide-panel=false
+highlight-mouse-over=false
+icon-style='Overlay'
+offset=0
+overlay-icon-size=128.0
+perspective-correction-method='Move Camera'
+position='Bottom'
+preview-to-monitor-ratio=0.90000000000000002
+switcher-looping-method='Flip Stack'
+switcher-style='Coverflow'
+
+[org/gnome/shell/extensions/pano]
+active-item-border-color='rgb(137,180,250)'
+hovered-item-border-color='rgb(137,180,250)'
+incognito-window-background-color='rgba(7,7,33,0.92)'
+is-in-incognito=false
+keep-search-entry=false
+open-links-in-browser=false
+paste-on-select=false
+play-audio-on-copy=false
+send-notification-on-copy=false
+show-indicator=false
+window-background-color='rgba(17,17,27,0.92)'
+window-height=400
+
+[org/gnome/shell/extensions/pano/code-item]
+body-bg-color='rgb(30,30,46)'
+body-font-family='JetBrainsMono Nerd Font'
+body-font-size=13
+char-length=600
+header-bg-color='rgb(203,166,247)'
+
+[org/gnome/shell/extensions/pano/color-item]
+header-bg-color='rgb(203,166,247)'
+metadata-font-family='Roboto'
+metadata-font-size=16
+
+[org/gnome/shell/extensions/pano/emoji-item]
+body-bg-color='rgb(249,226,175)'
+header-bg-color='rgb(243,139,168)'
+header-color='rgb(255,255,255)'
+
+[org/gnome/shell/extensions/pano/file-item]
+body-bg-color='rgb(30,30,46)'
+body-color='rgb(250,250,250)'
+body-font-family='Roboto'
+body-font-size=13
+header-bg-color='rgb(116,199,236)'
+
+[org/gnome/shell/extensions/pano/image-item]
+body-bg-color='rgb(69,71,90)'
+header-bg-color='rgb(243,139,168)'
+metadata-bg-color='rgba(30,30,46,0.79)'
+metadata-font-family='Roboto'
+metadata-font-size=12
+
+[org/gnome/shell/extensions/pano/link-item]
+body-bg-color='rgb(116,199,236)'
+header-bg-color='rgb(137,180,250)'
+header-color='rgb(255,255,255)'
+metadata-bg-color='rgb(30,30,46)'
+metadata-description-font-family='Roboto'
+metadata-description-font-size=11
+metadata-link-font-family='Roboto'
+metadata-link-font-size=11
+metadata-title-color='rgb(255,255,255)'
+metadata-title-font-family='Roboto'
+metadata-title-font-size=12
+
+[org/gnome/shell/extensions/pano/text-item]
+body-bg-color='rgb(30,30,46)'
+body-color='rgb(205,214,244)'
+body-font-family='Roboto'
+body-font-size=14
+header-bg-color='rgb(137,180,250)'
+header-color='rgb(255,255,255)'
+
+[org/gnome/shell/extensions/tiling-assistant]
+activate-layout0=@as []
+activate-layout1=@as []
+activate-layout2=@as []
+activate-layout3=@as []
+active-window-hint=1
+auto-tile=@as []
+center-window=@as []
+debugging-free-rects=@as []
+debugging-show-tiled-rects=@as []
+default-move-mode=0
+dynamic-keybinding-behaviour=0
+import-layout-examples=false
+last-version-installed=39
+restore-window=['<Super>Down']
+search-popup-layout=@as []
+single-screen-gap=2
+tile-bottom-half=['<Super>KP_2']
+tile-bottom-half-ignore-ta=@as []
+tile-bottomleft-quarter=['<Super>KP_1']
+tile-bottomleft-quarter-ignore-ta=@as []
+tile-bottomright-quarter=['<Super>KP_3']
+tile-bottomright-quarter-ignore-ta=@as []
+tile-edit-mode=@as []
+tile-left-half=['<Super>Left', '<Super>KP_4']
+tile-left-half-ignore-ta=@as []
+tile-maximize=['<Super>Up', '<Super>KP_5']
+tile-maximize-horizontally=@as []
+tile-maximize-vertically=@as []
+tile-right-half=['<Super>Right', '<Super>KP_6']
+tile-right-half-ignore-ta=@as []
+tile-top-half=['<Super>KP_8']
+tile-top-half-ignore-ta=@as []
+tile-topleft-quarter=['<Super>KP_7']
+tile-topleft-quarter-ignore-ta=@as []
+tile-topright-quarter=['<Super>KP_9']
+tile-topright-quarter-ignore-ta=@as []
+toggle-always-on-top=@as []
+toggle-tiling-popup=@as []
+
+[org/gnome/shell/extensions/top-bar-organizer]
+center-box-order=['dateMenu']
+left-box-order=['activities', 'vitalsMenu', 'appMenu']
+right-box-order=['TrayIconsReloaded', 'tiling-assistant@leleat-on-github', 'EmojisMenu', 'color-picker@tuberry', 'wireless-hid', 'screenRecording', 'screenSharing', 'dwellClick', 'a11y', 'keyboard', 'quickSettings']
+
+[org/gnome/shell/extensions/trayIconsReloaded]
+icon-margin-horizontal=0
+icon-margin-vertical=4
+icon-padding-horizontal=12
+icon-saturation=0
+icon-size=20
+tray-margin-left=4
+tray-margin-right=0
+
+[org/gnome/shell/extensions/vitals]
+alphabetize=true
+fixed-widths=true
+hide-icons=false
+hot-sensors=['_memory_usage_', '_processor_usage_', '__temperature_max__']
+position-in-panel=0
+show-storage=false
+show-system=false
+update-time=2
