@@ -17,6 +17,4 @@ echo "Update swappiness..."
 echo 'vm.swappiness=10' | sudo tee -a /etc/sysctl.d/00-custom.conf
 echo 'vm.vfs_cache_pressure=50' | sudo tee -a /etc/sysctl.d/00-custom.conf
 
-sudo swapon /swapfile
-
 echo "Swap configured."
