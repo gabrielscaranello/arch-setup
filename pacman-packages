@@ -45,6 +45,9 @@ gnome-menus
 gnome-session
 gnome-settings-daemon
 gnome-shell
+gnome-shell-extension-appindicator
+gnome-shell-extension-caffeine
+gnome-shell-extension-vitals
 gnome-system-monitor
 gnome-text-editor
 gnome-themes-extra

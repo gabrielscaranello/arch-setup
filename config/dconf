@@ -1,8 +1,8 @@
 [org/gnome/shell/extensions/arch-update]
-check-cmd="/bin/sh -c \"(/usr/bin/checkupdates; /usr/bin/yay -Qu --color never | sed 's/Get .*//') | sort -u -t' ' -k1,1; /usr/bin/flatpak remote-ls --columns=application -a --updates\""
+check-cmd="/bin/sh -c \"(/usr/bin/checkupdates; /usr/bin/yay -Qu --color never | sed 's/Get .*//') | sort -u -t' ' -k1,1;\""
 check-interval=60
 disable-parsing=true
-update-cmd='kitty --start-as=maximized --title "Update packages" -1 sh -c  "yay; flatpak update; sudo touch /var/lib/pacman/local/flatpak-arch-update; echo Done - Press enter to exit; read"'
+update-cmd='kitty --start-as=maximized --title "Update packages" -1 sh -c  "yay; echo Done - Press enter to exit; read"'
 use-buildin-icons=true
 
 [org/gnome/shell/extensions/blur-my-shell/appfolder]
@@ -160,20 +160,6 @@ tile-topright-quarter=['<Super>KP_9']
 tile-topright-quarter-ignore-ta=@as []
 toggle-always-on-top=@as []
 toggle-tiling-popup=@as []
-
-[org/gnome/shell/extensions/top-bar-organizer]
-center-box-order=['dateMenu']
-left-box-order=['activities', 'vitalsMenu', 'appMenu']
-right-box-order=['TrayIconsReloaded', 'tiling-assistant@leleat-on-github', 'EmojisMenu', 'color-picker@tuberry', 'wireless-hid', 'screenRecording', 'screenSharing', 'dwellClick', 'a11y', 'keyboard', 'quickSettings']
-
-[org/gnome/shell/extensions/trayIconsReloaded]
-icon-margin-horizontal=0
-icon-margin-vertical=4
-icon-padding-horizontal=12
-icon-saturation=0
-icon-size=20
-tray-margin-left=4
-tray-margin-right=0
 
 [org/gnome/shell/extensions/vitals]
 alphabetize=true
