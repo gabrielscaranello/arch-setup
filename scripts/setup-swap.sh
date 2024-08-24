@@ -1,6 +1,6 @@
 #! /bin/bash
 
-SIZE=$(cat </proc/meminfo | awk '/MemTotal/ { printf("%.0f", ($2 / 1024 / 1024 / 2)) }')
+SIZE=$(cat </proc/meminfo | awk '/MemTotal/ { printf("%.0f", ($2 / 1024 / 1024 / 4)) }')
 MB_SIZE=$(echo "$SIZE" | awk '{ printf "%.0f", ($1 * 1024) }')
 
 echo "Setting up swap..."
