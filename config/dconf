@@ -1,35 +1,172 @@
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['org.gnome.tweaks.desktop', 'org.gnome.baobab.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'gufw.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.FileRoller.desktop', 'org.flameshot.Flameshot.desktop', 'cups.desktop', 'org.freedesktop.Piper.desktop', 'vlc.desktop', 'timeshift-gtk.desktop', 'gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Loupe.desktop']
+categories=['X-GNOME-Utilities']
+excluded-apps=['org.gnome.Characters.desktop']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/datetime]
+automatic-timezone=false
+
+[org/gnome/desktop/input-sources]
+sources=[('xkb', 'us+intl')]
+xkb-options=['terminate:ctrl_alt_bksp', 'lv3:ralt_switch']
+
+[org/gnome/desktop/interface]
+clock-show-seconds=true
+clock-show-weekday=true
+color-scheme='prefer-dark'
+document-font-name='Noto Sans 11'
+font-name='Roboto 11'
+monospace-font-name='JetBrainsMono Nerd Font 10'
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='flat'
+left-handed=false
+
+[org/gnome/desktop/privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+remember-recent-files=false
+remove-old-temp-files=true
+remove-old-trash-files=true
+
+[org/gnome/desktop/search-providers]
+disabled=['org.gnome.Nautilus.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'firefox.desktop']
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
+[org/gnome/desktop/sound]
+event-sounds=false
+theme-name='__custom'
+
+[org/gnome/desktop/wm/keybindings]
+maximize=@as []
+show-desktop=['<Super>d']
+unmaximize=@as []
+
+[org/gnome/mutter]
+center-new-windows=true
+edge-tiling=false
+
+[org/gnome/mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
+
+[org/gnome/nautilus/list-view]
+use-tree-view=true
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+show-create-link=true
+show-delete-permanently=true
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-schedule-automatic=false
+night-light-schedule-from=4.0
+night-light-schedule-to=3.9833333333333334
+night-light-temperature=uint32 4700
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+home=['<Super>e']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>t'
+command='kitty --start-as maximized'
+name='Kitty'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Control><Super>s'
+command='flameshot gui'
+name='Flameshot'
+
+[org/gnome/shell]
+app-picker-layout=[{'org.gnome.Calculator.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'org.gnome.Characters.desktop': <{'position': <2>}>, 'org.gnome.TextEditor.desktop': <{'position': <3>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'Utilities': <{'position': <6>}>}]
+enabled-extensions=['CoverflowAltTab@palatis.blogspot.com', 'color-picker@tuberry', 'emoji-copy@felipeftn', 'order-extensions@wa4557.github.com', 'tiling-assistant@leleat-on-github', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'wireless-hid@chlumskyvaclav.gmail.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'pano@elhan.io', 'Vitals@CoreCoding.com', 'Hide_Activities@shay.shayel.org', 'logomenu@aryan_k', 'window-title-is-back@fthx']
+favorite-apps=['org.gnome.Nautilus.desktop', 'kitty.desktop', 'code.desktop', 'firefox.desktop', 'google-chrome.desktop', 'gimp.desktop', 'onlyoffice-desktopeditors.desktop', 'io.dbeaver.DBeaver.desktop', 'spotify.desktop', 'discord.desktop', 'org.telegram.desktop.desktop']
+welcome-dialog-last-shown-version='46.4'
+
+[org/gnome/shell/extensions/Logo-menu]
+hide-softwarecentre=true
+menu-button-icon-click-type=1
+menu-button-icon-image=6
+menu-button-icon-size=20
+menu-button-terminal='kitty'
+symbolic-icon=true
+use-custom-icon=false
+
 [org/gnome/shell/extensions/arch-update]
+always-visible=true
 check-cmd="/bin/sh -c \"(/usr/bin/checkupdates; /usr/bin/yay -Qu --color never | sed 's/Get .*//') | sort -u -t' ' -k1,1;\""
 check-interval=60
 disable-parsing=true
+linkify-menu=false
+package-info-cmd='xdg-open https://www.archlinux.org/packages/%2$s/%3$s/%1$s'
 update-cmd='kitty --start-as=maximized --title "Update packages" -1 sh -c  "yay; echo Done - Press enter to exit; read"'
 use-buildin-icons=true
+
+[org/gnome/shell/extensions/blur-my-shell]
+settings-version=2
 
 [org/gnome/shell/extensions/blur-my-shell/appfolder]
 blur=true
 customize=false
-style-dialogs=3
+style-dialogs=2
 
 [org/gnome/shell/extensions/blur-my-shell/applications]
 blur=false
 
+[org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
+blur=false
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+pipeline='pipeline_default_rounded'
+static-blur=true
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-panel]
+blur-original-panel=true
+
+[org/gnome/shell/extensions/blur-my-shell/hidetopbar]
+compatibility=false
+
 [org/gnome/shell/extensions/blur-my-shell/lockscreen]
 blur=true
+pipeline='pipeline_default'
 
 [org/gnome/shell/extensions/blur-my-shell/overview]
 blur=true
+pipeline='pipeline_default'
 style-components=1
 
 [org/gnome/shell/extensions/blur-my-shell/panel]
 blur=true
+force-light-text=false
+pipeline='pipeline_default'
+static-blur=true
 unblur-in-overview=true
 
 [org/gnome/shell/extensions/blur-my-shell/screenshot]
 blur=true
+pipeline='pipeline_default'
 
 [org/gnome/shell/extensions/caffeine]
 duration-timer=2
-indicator-position-max=1
+indicator-position-max=3
+restore-state=true
+show-indicator='only-active'
+toggle-state=true
+user-enabled=true
+
+[org/gnome/shell/extensions/caffeine]
+duration-timer=2
+indicator-position-max=3
 restore-state=true
 show-indicator='only-active'
 toggle-state=true
@@ -44,16 +181,23 @@ preview-style=uint32 1
 animation-time=0.25
 dim-factor=0.5
 easing-function='ease-in-out-circ'
-hide-panel=false
+hide-panel=true
 highlight-mouse-over=false
 icon-style='Overlay'
 offset=0
 overlay-icon-size=128.0
-perspective-correction-method='Move Camera'
+perspective-correction-method='Adjust Angles'
 position='Bottom'
 preview-to-monitor-ratio=0.90000000000000002
+randomize-animation-times=false
+switcher-background-color=(0.5490196078431373, 0.66666666666666663, 0.93333333333333335)
 switcher-looping-method='Flip Stack'
 switcher-style='Coverflow'
+
+[org/gnome/shell/extensions/order-icons]
+order-icons-center=['dateMenu']
+order-icons-left=['activities', 'LogoMenu', 'vitalsMenu', 'focused-window-indicator']
+order-icons-right=['wireless-hid', 'color-picker@tuberry', 'ArchUpdateIndicator', 'tiling-assistant@leleat-on-github', 'emoji-copy@felipeftn', 'quickSettings', 'keyboard', 'a11y', 'dwellClick', 'screenSharing', 'screenRecording']
 
 [org/gnome/shell/extensions/pano]
 active-item-border-color='rgb(137,180,250)'
@@ -134,7 +278,8 @@ debugging-show-tiled-rects=@as []
 default-move-mode=0
 dynamic-keybinding-behaviour=0
 import-layout-examples=false
-last-version-installed=39
+last-version-installed=48
+overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.maximize': <@mb nothing>, 'org.gnome.desktop.wm.keybindings.unmaximize': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
 restore-window=['<Super>Down']
 search-popup-layout=@as []
 single-screen-gap=2
@@ -165,8 +310,12 @@ toggle-tiling-popup=@as []
 alphabetize=true
 fixed-widths=true
 hide-icons=false
-hot-sensors=['_memory_usage_', '_processor_usage_', '__temperature_max__']
+hot-sensors=['_memory_usage_', '_processor_usage_', '_temperature_k10temp_tctl_']
 position-in-panel=0
 show-storage=false
 show-system=false
 update-time=2
+
+[org/gnome/shell/extensions/window-title-is-back]
+fixed-width=false
+show-title=false
