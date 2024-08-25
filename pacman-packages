@@ -5,6 +5,7 @@ baobab
 bat
 bottom
 btop
+celluloid
 cups
 dbeaver
 discord
@@ -106,7 +107,6 @@ ttf-liberation
 ttf-roboto
 ufw
 unzip
-vlc
 wget
 wpa_supplicant
 xclip
