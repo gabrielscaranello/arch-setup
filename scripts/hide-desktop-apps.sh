@@ -9,6 +9,7 @@ APPS=(
 	designer
 	linguist
 	lstopo
+	mpv
 	nm-connection-editor
 	nvim
 	qdbusviewer
