@@ -47,6 +47,7 @@ gnome-shell
 gnome-shell-extension-appindicator
 gnome-shell-extension-caffeine
 gnome-shell-extension-vitals
+gnome-software
 gnome-system-monitor
 gnome-text-editor
 gnome-themes-extra
