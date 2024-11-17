@@ -114,5 +114,6 @@ xdg-desktop-portal-gnome
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
+xorg
 zsh
 zsh-completions
