@@ -12,7 +12,6 @@ cups
 dbeaver
 dialog
 discord
-discover
 docker
 docker-buildx
 docker-compose
@@ -32,6 +31,7 @@ gimp
 git
 go
 gst-libav
+gst-plugin-pipewire
 gst-plugins-good
 gwenview
 jre-openjdk
@@ -47,7 +47,7 @@ kscreen
 kscreenlocker
 kwallet-pam
 lazygit
-lua
+lua51
 luarocks
 man-db
 mtools
@@ -58,7 +58,6 @@ ntfs-3g
 numlockx
 okular
 openssh
-packagekit-qt6
 pacman-contrib
 partitionmanager
 phonon-qt6-vlc
@@ -111,6 +110,7 @@ wpa_supplicant
 xclip
 xdg-desktop-portal-kde
 xdg-user-dirs
+xdg-utils
 xorg
 zsh
 zsh-completions
