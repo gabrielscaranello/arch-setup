@@ -32,6 +32,7 @@
     "***log***",
     "/var/lib/docker",
     "/var/lib/containerd",
+    "/var/tmp",
     "+ :home:/.**",
     "+ :home:/Code/***",
     "+ :home:/:documents_dir:/***",

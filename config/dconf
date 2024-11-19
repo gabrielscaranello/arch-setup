@@ -1,16 +1,5 @@
-[org/gnome/desktop/app-folders/folders/Utilities]
-apps=['org.gnome.tweaks.desktop', 'org.gnome.baobab.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'gufw.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.FileRoller.desktop', 'org.flameshot.Flameshot.desktop', 'cups.desktop', 'org.freedesktop.Piper.desktop', 'vlc.desktop', 'timeshift-gtk.desktop', 'gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Loupe.desktop']
-categories=['X-GNOME-Utilities']
-excluded-apps=['org.gnome.Characters.desktop']
-name='X-GNOME-Utilities.directory'
-translate=true
-
 [org/gnome/desktop/datetime]
 automatic-timezone=false
-
-[org/gnome/desktop/input-sources]
-sources=[('xkb', 'us+intl')]
-xkb-options=['terminate:ctrl_alt_bksp', 'lv3:ralt_switch']
 
 [org/gnome/desktop/interface]
 clock-show-seconds=true
@@ -31,16 +20,8 @@ remember-recent-files=false
 remove-old-temp-files=true
 remove-old-trash-files=true
 
-[org/gnome/desktop/search-providers]
-disabled=['org.gnome.Nautilus.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Calendar.desktop', 'firefox.desktop']
-sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
-
 [org/gnome/desktop/session]
 idle-delay=uint32 300
-
-[org/gnome/desktop/sound]
-event-sounds=false
-theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
 maximize=@as []
@@ -85,12 +66,6 @@ name='Kitty'
 binding='<Control><Super>s'
 command='flameshot gui'
 name='Flameshot'
-
-[org/gnome/shell]
-app-picker-layout=[{'org.gnome.Calculator.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'org.gnome.Characters.desktop': <{'position': <2>}>, 'org.gnome.TextEditor.desktop': <{'position': <3>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <4>}>, 'org.gnome.Settings.desktop': <{'position': <5>}>, 'Utilities': <{'position': <6>}>}]
-enabled-extensions=['CoverflowAltTab@palatis.blogspot.com', 'color-picker@tuberry', 'emoji-copy@felipeftn', 'order-extensions@wa4557.github.com', 'tiling-assistant@leleat-on-github', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'wireless-hid@chlumskyvaclav.gmail.com', 'arch-update@RaphaelRochet', 'appindicatorsupport@rgcjonas.gmail.com', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'pano@elhan.io', 'Vitals@CoreCoding.com', 'Hide_Activities@shay.shayel.org', 'logomenu@aryan_k', 'window-title-is-back@fthx']
-favorite-apps=['org.gnome.Nautilus.desktop', 'kitty.desktop', 'code.desktop', 'firefox.desktop', 'google-chrome.desktop', 'gimp.desktop', 'onlyoffice-desktopeditors.desktop', 'io.dbeaver.DBeaver.desktop', 'spotify.desktop', 'discord.desktop', 'org.telegram.desktop.desktop']
-welcome-dialog-last-shown-version='46.4'
 
 [org/gnome/shell/extensions/Logo-menu]
 hide-softwarecentre=true
@@ -193,11 +168,6 @@ randomize-animation-times=false
 switcher-background-color=(0.5490196078431373, 0.66666666666666663, 0.93333333333333335)
 switcher-looping-method='Flip Stack'
 switcher-style='Coverflow'
-
-[org/gnome/shell/extensions/order-icons]
-order-icons-center=['dateMenu']
-order-icons-left=['activities', 'LogoMenu', 'vitalsMenu', 'focused-window-indicator']
-order-icons-right=['wireless-hid', 'color-picker@tuberry', 'ArchUpdateIndicator', 'tiling-assistant@leleat-on-github', 'emoji-copy@felipeftn', 'quickSettings', 'keyboard', 'a11y', 'dwellClick', 'screenSharing', 'screenRecording']
 
 [org/gnome/shell/extensions/pano]
 active-item-border-color='rgb(137,180,250)'

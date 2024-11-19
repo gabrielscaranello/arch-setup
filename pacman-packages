@@ -7,7 +7,6 @@ bottom
 btop
 celluloid
 cups
-dbeaver
 discord
 docker
 docker-buildx
@@ -16,6 +15,7 @@ dosfstools
 evince
 eza
 fd
+flatpak
 ffmpegthumbnailer
 file-roller
 firefox
@@ -66,7 +66,6 @@ gvfs-google
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
-jre-openjdk
 keychain
 kitty
 lazygit
@@ -84,15 +83,14 @@ ntfs-3g
 numlockx
 openssh
 pacman-contrib
+papirus-icon-theme
 piper
-print-manager
 protobuf
 python-pip
 python-pipx
 python-virtualenv
 python3
 ripgrep
-sassc
 sushi
 tecla
 telegram-desktop
