@@ -15,12 +15,12 @@ dosfstools
 evince
 eza
 fd
-flatpak
 ffmpegthumbnailer
 file-roller
 firefox
 firefox-i18n-pt-br
 flameshot
+flatpak
 fwupd
 fwupd-efi
 gdm
@@ -73,6 +73,7 @@ libgda6
 loupe
 lua51
 luarocks
+malcontent
 man-db
 mtools
 nautilus
