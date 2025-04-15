@@ -4,14 +4,11 @@ aspell-en
 aspell-pt
 bat
 bluedevil
-bottom
 breeze-gtk
 btop
 calindori
 cups
-dbeaver
 dialog
-discord
 docker
 docker-buildx
 docker-compose
@@ -24,6 +21,7 @@ ffmpegthumbs
 firefox
 firefox-i18n-pt-br
 flameshot
+flatpak
 fwupd
 fwupd-efi
 gdu
@@ -33,12 +31,15 @@ go
 gst-libav
 gst-plugin-pipewire
 gst-plugins-good
+gufw
 gwenview
-jre-openjdk
 kaccounts-integration
 kaccounts-providers
 kalk
 kde-gtk-config
+kdeconnect
+kdegraphics-thumbnailers
+kdenetwork-filesharing
 kdeplasma-addons
 keychain
 kitty
@@ -61,7 +62,6 @@ openssh
 pacman-contrib
 partitionmanager
 phonon-qt6-vlc
-piper
 plasma-browser-integration
 plasma-desktop
 plasma-disks
