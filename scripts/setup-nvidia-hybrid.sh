@@ -1,14 +1,15 @@
 #! /bin/bash
 
 PWD=$(pwd)
-PACKAGES=$(cat "$PWD/nvidia-hybrid-packages" | tr '\n' ' ')
+PACKAGES=$(tr '\n' ' ' <"$PWD/nvidia-hybrid-packages")
 
-bash $PWD/scripts/setup-nvidia.sh
+bash "${PWD}/scripts/setup-nvidia.sh"
 
 echo "Configuring NVIDIA hybrid drivers..."
 
 echo "Installing driver packages"
-yay --noconfirm && yay -Sy --noconfirm $PACKAGES
+yay --noconfirm
+echo "$PACKAGES" | xargs yay -Sy --noconfirm
 
 echo "Enabling services..."
 sudo systemctl enable switcheroo-control.service

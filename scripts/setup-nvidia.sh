@@ -1,12 +1,13 @@
 #! /bin/bash
 
 PWD=$(pwd)
-PACKAGES=$(cat "$PWD/nvidia-packages" | tr '\n' ' ')
+PACKAGES=$(tr '\n' ' ' <"$PWD/nvidia-packages")
 
 echo "Configuring NVIDIA drivers..."
 
 echo "Installing driver packages"
-sudo pacman -Suy --noconfirm && sudo pacman -S --noconfirm $PACKAGES
+sudo pacman -Suy --noconfirm
+echo "$PACKAGES" | xargs sudo pacman -Sy --noconfirm
 
 echo "Enabling services..."
 sudo systemctl enable nvidia-hibernate.service

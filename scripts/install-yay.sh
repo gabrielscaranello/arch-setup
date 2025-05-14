@@ -12,6 +12,6 @@ git clone https://aur.archlinux.org/yay.git /tmp/yay
 
 echo "Installing yay..."
 cd /tmp/yay && makepkg -si
-cd "$PWD"
+cd "$PWD" || exit
 
 echo "yay installed."

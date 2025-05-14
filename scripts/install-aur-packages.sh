@@ -1,8 +1,8 @@
 #! /bin/bash
 
 PWD=$(pwd)
-PACKAGES=$(cat "$PWD/aur-packages" | tr '\n' ' ')
+PACKAGES=$(tr '\n' ' ' <"$PWD/aur-packages")
 
 echo "Installing yay packages..."
-yay -Sy --noconfirm $PACKAGES
+echo "$PACKAGES" | xargs yay -Sy --noconfirm
 echo "yay packages installed."
