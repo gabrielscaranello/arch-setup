@@ -42,7 +42,7 @@ monospace-font-name='JetBrainsMono Nerd Font 10'
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['firefox', 'gnome-power-panel', 'org-telegram-desktop', 'org-flameshot-flameshot']
+application-children=['firefox', 'gnome-power-panel', 'org-telegram-desktop', 'org-flameshot-flameshot', 'com-discordapp-discord', 'org-gnome-extensions', 'org-gnome-software', 'org-gnome-nautilus']
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
@@ -52,6 +52,15 @@ application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/org-flameshot-flameshot]
 application-id='org.flameshot.Flameshot.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
 
 [org/gnome/desktop/notifications/application/org-telegram-desktop]
 application-id='org.telegram.desktop.desktop'
@@ -233,9 +242,11 @@ pipeline='pipeline_default'
 [org/gnome/shell/extensions/caffeine]
 countdown-timer=0
 duration-timer=2
-indicator-position-max=1
+indicator-position-max=2
 restore-state=true
 show-indicator='only-active'
+toggle-state=true
+user-enabled=true
 
 [org/gnome/shell/extensions/color-picker]
 enable-shortcut=false
@@ -262,7 +273,7 @@ switcher-style='Coverflow'
 [org/gnome/shell/extensions/order-icons]
 order-icons-center=['dateMenu']
 order-icons-left=['LogoMenu', 'activities', 'vitalsMenu', 'focused-window-indicator']
-order-icons-right=['flameshot', 'spotify-client', 'TelegramDesktop', 'wireless-hid', 'color-picker@tuberry', 'tiling-assistant@leleat-on-github', 'emoji-copy@felipeftn', 'ArchUpdateIndicator', 'quickSettings', 'keyboard', 'a11y', 'dwellClick', 'screenSharing', 'screenRecording']
+order-icons-right=['xdg-dbus-proxy --args=51 ', 'xdg-dbus-proxy --args=50 ', 'xdg-dbus-proxy --args=49 ', 'xdg-dbus-proxy --args=44 ', 'xdg-dbus-proxy --args=45 ', 'flameshot', 'spotify-client', 'TelegramDesktop', 'wireless-hid', 'color-picker@tuberry', 'tiling-assistant@leleat-on-github', 'emoji-copy@felipeftn', 'ArchUpdateIndicator', 'quickSettings', 'keyboard', 'a11y', 'dwellClick', 'screenSharing', 'screenRecording']
 
 [org/gnome/shell/extensions/pano]
 active-item-border-color='rgb(137,180,250)'
