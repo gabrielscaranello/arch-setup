@@ -2,11 +2,9 @@
 restore-session=false
 style-scheme='Adwaita-dark'
 
-[org/gnome/desktop/app-folders/folders/Utilities]
-apps=['org.gnome.tweaks.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Characters.desktop', 'gufw.desktop', 'nvidia-settings.desktop', 'org.gnome.Contacts.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.FileRoller.desktop', 'org.flameshot.Flameshot.desktop', 'org.gnome.font-viewer.desktop', 'cups.desktop', 'org.gnome.Logs.desktop', 'org.gnome.Papers.desktop', 'vlc.desktop', 'timeshift-gtk.desktop', 'org.gnome.Loupe.desktop']
-categories=['X-GNOME-Utilities']
-excluded-apps=['org.gnome.SystemMonitor.desktop']
-name='X-GNOME-Shell-Utilities.directory'
+[org/gnome/desktop/app-folders/folders/System]
+apps=['org.gnome.tweaks.desktop', 'org.gnome.baobab.desktop', 'gufw.desktop', 'org.gnome.Settings.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Extensions.desktop', 'org.gnome.FileRoller.desktop', 'org.flameshot.Flameshot.desktop', 'org.gnome.font-viewer.desktop', 'cups.desktop', 'org.gnome.Logs.desktop', 'org.gnome.SystemMonitor.desktop', 'org.gnome.Papers.desktop', 'org.gnome.Software.desktop', 'vlc.desktop', 'org.gnome.Loupe.desktop']
+name='X-GNOME-Shell-System.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/YaST]
@@ -34,21 +32,24 @@ clock-show-weekday=true
 color-scheme='prefer-dark'
 cursor-size=20
 cursor-theme='Bibata-Modern-Ice'
-document-font-name='Noto Sans 11'
-font-name='Roboto 11'
 gtk-theme='adw-gtk3-dark'
 icon-theme='Papirus-Dark'
-monospace-font-name='JetBrainsMono Nerd Font 10'
 toolkit-accessibility=false
 
 [org/gnome/desktop/notifications]
-application-children=['firefox', 'gnome-power-panel', 'org-telegram-desktop', 'org-flameshot-flameshot', 'com-discordapp-discord', 'org-gnome-extensions', 'org-gnome-software', 'org-gnome-nautilus']
+application-children=['firefox', 'gnome-power-panel', 'org-telegram-desktop', 'org-flameshot-flameshot', 'com-discordapp-discord', 'org-gnome-extensions', 'org-gnome-software', 'org-gnome-nautilus', 'google-chrome']
+
+[org/gnome/desktop/notifications/application/com-discordapp-discord]
+application-id='com.discordapp.Discord.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
 
 [org/gnome/desktop/notifications/application/org-flameshot-flameshot]
 application-id='org.flameshot.Flameshot.desktop'
@@ -102,6 +103,7 @@ show-desktop=['<Super>d']
 unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
+action-middle-click-titlebar='minimize'
 theme='adw-gtk3-dark'
 
 [org/gnome/mutter]
@@ -136,10 +138,6 @@ dual-page=false
 dual-page-odd-left=false
 enable-spellchecking=true
 show-sidebar=true
-sizing-mode='automatic'
-
-[org/gnome/portal/filechooser/org.gnome.Settings]
-last-folder-path='/home/gabriel/Imagens/Wallpaper'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
@@ -163,11 +161,11 @@ command='flameshot gui'
 name='Flameshot'
 
 [org/gnome/shell]
-app-picker-layout=[{'org.gnome.Calculator.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'org.gnome.Settings.desktop': <{'position': <2>}>, 'org.gnome.TextEditor.desktop': <{'position': <3>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <4>}>, 'org.gnome.Software.desktop': <{'position': <5>}>, 'Utilities': <{'position': <6>}>}]
+app-picker-layout=[{'org.gnome.Calculator.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'org.gnome.Characters.desktop': <{'position': <2>}>, 'nvidia-settings.desktop': <{'position': <3>}>, 'org.gnome.Contacts.desktop': <{'position': <4>}>, 'org.gnome.TextEditor.desktop': <{'position': <5>}>, 'timeshift-gtk.desktop': <{'position': <6>}>, 'System': <{'position': <7>}>}]
 command-history=['r']
 disable-extension-version-validation=true
 disabled-extensions=['top-bar-organizer@julian.gse.jsts.xyz']
-enabled-extensions=['CoverflowAltTab@palatis.blogspot.com', 'color-picker@tuberry', 'emoji-copy@felipeftn', 'Hide_Activities@shay.shayel.org', 'logomenu@aryan_k', 'tiling-assistant@leleat-on-github', 'window-title-is-back@fthx', 'wireless-hid@chlumskyvaclav.gmail.com', 'arch-update@RaphaelRochet', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'Vitals@CoreCoding.com', 'appindicatorsupport@rgcjonas.gmail.com', 'pano@elhan.io', 'lilypad@shendrew.github.io', 'order-extensions@wa4557.github.com']
+enabled-extensions=['CoverflowAltTab@palatis.blogspot.com', 'color-picker@tuberry', 'emoji-copy@felipeftn', 'Hide_Activities@shay.shayel.org', 'logomenu@aryan_k', 'tiling-assistant@leleat-on-github', 'window-title-is-back@fthx', 'wireless-hid@chlumskyvaclav.gmail.com', 'arch-update@RaphaelRochet', 'blur-my-shell@aunetx', 'caffeine@patapon.info', 'Vitals@CoreCoding.com', 'appindicatorsupport@rgcjonas.gmail.com', 'pano@elhan.io', 'lilypad@shendrew.github.io', 'order-extensions@wa4557.github.com', 'AlphabeticalAppGrid@stuarthayhurst']
 favorite-apps=['kitty.desktop', 'org.gnome.Nautilus.desktop', 'firefox.desktop', 'google-chrome.desktop', 'code.desktop', 'md.obsidian.Obsidian.desktop', 'io.dbeaver.DBeaverCommunity.desktop', 'gimp.desktop', 'org.onlyoffice.desktopeditors.desktop', 'io.github.alainm23.planify.desktop', 'com.spotify.Client.desktop', 'com.discordapp.Discord.desktop', 'org.telegram.desktop.desktop']
 welcome-dialog-last-shown-version='47.1'
 
@@ -273,7 +271,7 @@ switcher-style='Coverflow'
 [org/gnome/shell/extensions/order-icons]
 order-icons-center=['dateMenu']
 order-icons-left=['LogoMenu', 'activities', 'vitalsMenu', 'focused-window-indicator']
-order-icons-right=['xdg-dbus-proxy --args=51 ', 'xdg-dbus-proxy --args=50 ', 'xdg-dbus-proxy --args=49 ', 'xdg-dbus-proxy --args=44 ', 'xdg-dbus-proxy --args=45 ', 'flameshot', 'spotify-client', 'TelegramDesktop', 'wireless-hid', 'color-picker@tuberry', 'tiling-assistant@leleat-on-github', 'emoji-copy@felipeftn', 'ArchUpdateIndicator', 'quickSettings', 'keyboard', 'a11y', 'dwellClick', 'screenSharing', 'screenRecording']
+order-icons-right=['xdg-dbus-proxy --args=51 ', 'xdg-dbus-proxy --args=50 ', 'xdg-dbus-proxy --args=49 ', 'xdg-dbus-proxy --args=44 ', 'xdg-dbus-proxy --args=45 ', 'flameshot', 'spotify-client', 'TelegramDesktop', 'wireless-hid', 'tiling-assistant@leleat-on-github', 'emoji-copy@felipeftn', 'color-picker@tuberry', 'ArchUpdateIndicator', 'quickSettings', 'keyboard', 'a11y', 'dwellClick', 'screenSharing', 'screenRecording']
 
 [org/gnome/shell/extensions/pano]
 active-item-border-color='rgb(137,180,250)'
