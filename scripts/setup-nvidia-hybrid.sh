@@ -15,6 +15,6 @@ echo "Enabling services..."
 sudo systemctl enable switcheroo-control.service
 
 echo "Change to nvidia driver usign envycontrol..."
-sudo envycontrol --dm sddm -s hybrid
+sudo envycontrol --dm gdm -s hybrid
 
 echo "NVIDIA hybrid drivers configured."
