@@ -89,6 +89,7 @@ python-pipx
 python-virtualenv
 python3
 ripgrep
+speech-dispatcher
 tecla
 telegram-desktop
 timeshift
