@@ -1,11 +1,11 @@
 all:
 	@sh ./scripts/all.sh
 
-copy-plasma-config:
-	@sh ./scripts/copy-plasma-config.sh
+copy-desktop-config:
+	@sh ./scripts/copy-desktop-config.sh
 
-copy-sddm-config:
-	@sh ./scripts/copy-sddm-config.sh
+copy-timeshift-config:
+	@sh ./scripts/copy-timeshift-config.sh
 
 enable-os-prober:
 	@sh ./scripts/enable-os-prober.sh
@@ -16,28 +16,45 @@ enable-services:
 hide-desktop-apps:
 	@sh ./scripts/hide-desktop-apps.sh
 
-install-pacman-packages:
-	@sh ./scripts/install-pacman-packages.sh
-
 install-aur-packages:
 	@sh ./scripts/install-aur-packages.sh
 
 install-bibata-cursor:
 	@sh ./scripts/install-bibata-cursor.sh
 
+install-flatpak-packages:
+	@sh ./install-flatpak-packages.sh
+
+install-gnome-extensions:
+	@sh ./scripts/install-gnome-extensions.sh
+
+install-gtk-theme:
+	@sh ./scripts/install-gtk-theme.sh
+
 install-nvm:
 	@sh ./scripts/install-nvm.sh
+
+install-pacman-packages:
+	@sh ./scripts/install-pacman-packages.sh
 
 install-yay:
 	@sh ./scripts/install-yay.sh
 
+setup-icon-theme:
+	@sh ./scripts/setup-icon-theme.sh
+
+setup-look:
+	@sh ./scripts/setup-look.sh
+
 setup-nvidia-hybrid:
 	@sh ./scripts/setup-nvidia-hybrid.sh
+
+setup-nvidia:
+	@sh ./scripts/setup-nvidia.sh
 
 setup-swap:
 	@sh ./scripts/setup-swap.sh
 
 usermod:
 	@sh ./scripts/usermod.sh
-
 
