@@ -22,6 +22,7 @@ fwupd
 fwupd-efi
 gdm
 gdu
+ghostscript
 gimp
 git
 gnome-backgrounds
@@ -63,6 +64,7 @@ gvfs-google
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
+imagemagick
 keychain
 kitty
 lazygit
