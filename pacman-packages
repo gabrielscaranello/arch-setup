@@ -4,7 +4,6 @@ aspell-pt
 baobab
 bat
 btop
-cargo
 cups
 docker
 docker-buildx
@@ -86,16 +85,16 @@ pacman-contrib
 papers
 papirus-icon-theme
 protobuf
+python
 python-pip
 python-pipx
 python-virtualenv
-python3
 ripgrep
+rust
 speech-dispatcher
 tecla
 telegram-desktop
 timeshift
-tracker3-miners
 tree-sitter-cli
 ttf-baekmuk
 ttf-carlito
