@@ -10,7 +10,8 @@ TARGET_DIR="/usr/share/icons"
 echo "Installing Bibata cursor..."
 
 # Remove old file
-sudo rm -rf $OUTPUT_DIR "$TARGET_DIR/$CURSOR_NAME"
+if [ -d "$TARGET_DIR/default" ] && [ -L "$TARGET_DIR/default/cursors" ]; then unlink "$TARGET_DIR/cursors"; fi
+sudo rm -rf $OUTPUT_DIR "$TARGET_DIR/$CURSOR_NAME" "$TARGET_DIR/default"
 
 # Download file
 wget -c "$DOWNLOAD_URL" -O $OUTPUT_DIR
@@ -24,6 +25,7 @@ sudo mv "$EXTRACT_DIR/$CURSOR_NAME" "$TARGET_DIR"
 
 # Set cursor
 gsettings set org.gnome.desktop.interface cursor-theme "$CURSOR_NAME"
-gsettings set org.gnome.desktop.interface cursor-size 20
+sudo cp -r "$PWD/plasma/icons/default" "$TARGET_DIR"
+sudo ln -sf "$TARGET_DIR/$CURSOR_NAME/cursors" "$TARGET_DIR/default/cursors"
 
 echo "Bibata cursor installed"

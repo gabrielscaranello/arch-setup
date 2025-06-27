@@ -17,12 +17,9 @@ This guide translates my personal installation, with packages that I use in my d
 | `install-aur-packages`       | Installs packages from the AUR                                    |
 | `install-bibata-cursor`      | Installs the Bibata cursor theme                                  |
 | `install-flatpak-packages`   | Installs applications via Flatpak                                 |
-| `install-gnome-extensions`   | Installs GNOME Shell extensions                                   |
-| `install-gtk-theme`          | Installs a GTK theme for the desktop environment                  |
 | `install-nvm`                | Installs Node Version Manager (NVM)                               |
 | `install-pacman-packages`    | Installs packages using Pacman package manager                    |
 | `install-yay`                | Installs Yay, an AUR helper for Arch-based systems                |
-| `setup-icon-theme`           | Sets up a custom icon theme                                       |
 | `setup-look`                 | Applies overall system theming and look                           |
 | `setup-nvidia-hybrid`        | Configures NVIDIA hybrid graphics setup                           |
 | `setup-nvidia`               | Sets up drivers and configuration for NVIDIA graphics             |

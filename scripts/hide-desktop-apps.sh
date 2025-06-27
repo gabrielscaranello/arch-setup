@@ -1,20 +1,17 @@
 #! /bin/bash
 
 APPS=(
-  assistant
-  avahi-discover
-  bssh
-  btop
-  bvnc
-  designer
-  linguist
-  lstopo
-  mpv
-  nm-connection-editor
-  nvim
-  qdbusviewer
-  qv4l2
-  qvidcap
+	assistant
+	avahi-discover
+	bssh
+	bvnc
+	designer
+	linguist
+	lstopo
+	nm-connection-editor
+	qdbusviewer
+	qv4l2
+	qvidcap
 )
 
 echo "Hiding desktop apps..."

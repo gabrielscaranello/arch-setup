@@ -28,9 +28,6 @@ install-flatpak-packages:
 install-gnome-extensions:
 	@sh ./scripts/install-gnome-extensions.sh
 
-install-gtk-theme:
-	@sh ./scripts/install-gtk-theme.sh
-
 install-nvm:
 	@sh ./scripts/install-nvm.sh
 
@@ -39,9 +36,6 @@ install-pacman-packages:
 
 install-yay:
 	@sh ./scripts/install-yay.sh
-
-setup-icon-theme:
-	@sh ./scripts/setup-icon-theme.sh
 
 setup-look:
 	@sh ./scripts/setup-look.sh
