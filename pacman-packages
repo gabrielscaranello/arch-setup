@@ -91,6 +91,7 @@ rust
 sddm
 sddm-kcm
 sonnet
+speech-dispatcher
 system-config-printer
 telegram-desktop
 thermald
