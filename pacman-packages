@@ -26,6 +26,7 @@ fwupd
 fwupd-efi
 gdu
 ghostscript
+ghostwriter
 gimp
 git
 go
@@ -48,6 +49,7 @@ kmenuedit
 kscreen
 kscreenlocker
 kwallet-pam
+kweather
 lazygit
 lua51
 luarocks
