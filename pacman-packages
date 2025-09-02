@@ -9,7 +9,6 @@ btop
 calindori
 cups
 dialog
-discover
 docker
 docker-buildx
 docker-compose
@@ -21,7 +20,6 @@ fd
 ffmpegthumbs
 firefox
 firefox-i18n-pt-br
-flameshot
 flatpak
 fwupd
 fwupd-efi
@@ -31,11 +29,13 @@ ghostwriter
 gimp
 git
 go
+grub-btrfs
 gst-libav
 gst-plugin-pipewire
 gst-plugins-good
 gwenview
 imagemagick
+inotify-tools
 kaccounts-integration
 kaccounts-providers
 kalk
@@ -63,7 +63,6 @@ ntfs-3g
 numlockx
 okular
 openssh
-packagekit-qt6
 pacman-contrib
 partitionmanager
 phonon-qt6-vlc
@@ -95,6 +94,7 @@ rust
 sddm
 sddm-kcm
 sonnet
+spectacle
 speech-dispatcher
 system-config-printer
 telegram-desktop
@@ -118,6 +118,7 @@ xclip
 xdg-desktop-portal-kde
 xdg-user-dirs
 xdg-utils
+xorg-xhost
 xorg-xwayland
 zsh
 zsh-completions
