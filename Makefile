@@ -4,6 +4,9 @@ all:
 copy-desktop-config:
 	@sh ./scripts/copy-desktop-config.sh
 
+copy-sddm-config:
+	@sh ./scripts/copy-sddm-config.sh
+
 copy-timeshift-config:
 	@sh ./scripts/copy-timeshift-config.sh
 
