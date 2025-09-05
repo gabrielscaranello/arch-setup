@@ -11,6 +11,7 @@ This guide translates my personal installation, with packages that I use in my d
 | `make all`                   | Executes all tasks defined in the scripts to configure the system |
 | `make copy-desktop-config`   | Copies the desktop configuration to user home                     |
 | `make copy-sddm-config`      | Copies the SDDM configuration to system                           |
+| `make copy-plasma-config`    | Copies the plasma configuration to use home                       |
 | `make copy-timeshift-config` | Copies the Timeshift configuration for system backup              |
 | `enable-os-prober`           | Enables OS prober for multi-boot detection                        |
 | `enable-services`            | Enables and starts essential system services                      |

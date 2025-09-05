@@ -7,6 +7,9 @@ copy-desktop-config:
 copy-sddm-config:
 	@sh ./scripts/copy-sddm-config.sh
 
+copy-plasma-config:
+	@sh ./scripts/copy-plasma-config.sh
+
 copy-timeshift-config:
 	@sh ./scripts/copy-timeshift-config.sh
 
