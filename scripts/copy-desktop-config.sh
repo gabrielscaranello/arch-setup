@@ -4,6 +4,9 @@ PWD=$(pwd)
 echo "Copying desktop config..."
 
 echo "Copying..."
+mkdir -p ~/.icons
+mkdir -p ~/.config
+rsync -a "$PWD/assets/icons/" ~/.icons/
 cp "$PWD"/config/mimeapps.list ~/.config/mimeapps.list
 sudo cp "$PWD"/config/mimeapps.list /root/.config/mimeapps.list
 
