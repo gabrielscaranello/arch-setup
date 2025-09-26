@@ -44,13 +44,13 @@ gnome-shell
 gnome-shell-extension-appindicator
 gnome-shell-extension-caffeine
 gnome-shell-extension-vitals
-gnome-software
 gnome-system-monitor
 gnome-text-editor
 gnome-themes-extra
 gnome-tweaks
 gnome-user-share
 go
+grub-btrfs
 gst-libav
 gst-plugin-pipewire
 gst-plugins-good
@@ -64,6 +64,7 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 imagemagick
+inotify-tools
 keychain
 kitty
 lazygit
@@ -91,6 +92,7 @@ python-pipx
 python-virtualenv
 ripgrep
 rust
+showtime
 speech-dispatcher
 tecla
 telegram-desktop
@@ -105,7 +107,6 @@ ttf-liberation
 ttf-roboto
 ufw
 unzip
-vlc
 wget
 wpa_supplicant
 xclip
