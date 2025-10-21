@@ -4,6 +4,12 @@ all:
 copy-desktop-config:
 	@sh ./scripts/copy-desktop-config.sh
 
+copy-sddm-config:
+	@sh ./scripts/copy-sddm-config.sh
+
+copy-plasma-config:
+	@sh ./scripts/copy-plasma-config.sh
+
 copy-timeshift-config:
 	@sh ./scripts/copy-timeshift-config.sh
 
@@ -25,12 +31,6 @@ install-bibata-cursor:
 install-flatpak-packages:
 	@sh ./install-flatpak-packages.sh
 
-install-gnome-extensions:
-	@sh ./scripts/install-gnome-extensions.sh
-
-install-gtk-theme:
-	@sh ./scripts/install-gtk-theme.sh
-
 install-nvm:
 	@sh ./scripts/install-nvm.sh
 
@@ -39,9 +39,6 @@ install-pacman-packages:
 
 install-yay:
 	@sh ./scripts/install-yay.sh
-
-setup-icon-theme:
-	@sh ./scripts/setup-icon-theme.sh
 
 setup-look:
 	@sh ./scripts/setup-look.sh

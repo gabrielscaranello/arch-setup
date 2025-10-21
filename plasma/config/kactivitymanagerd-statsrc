@@ -1,0 +1,11 @@
+[Favorites-org.kde.plasma.kickoff.favorites.instance-29-1468a5b8-6440-43df-8320-781f5e91fc67]
+ordering=applications:firefox.desktop,applications:org.onlyoffice.desktopeditors.desktop,applications:org.kde.ghostwriter.desktop,applications:md.obsidian.Obsidian.desktop,applications:gimp.desktop,applications:com.discordapp.Discord.desktop,applications:org.telegram.desktop.desktop,applications:systemsettings.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-29-global]
+ordering=applications:firefox.desktop,applications:org.onlyoffice.desktopeditors.desktop,applications:org.kde.ghostwriter.desktop,applications:md.obsidian.Obsidian.desktop,applications:gimp.desktop,applications:com.discordapp.Discord.desktop,applications:org.telegram.desktop.desktop,applications:systemsettings.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-1468a5b8-6440-43df-8320-781f5e91fc67]
+ordering=preferred://browser,org.kde.kontact.desktop,systemsettings.desktop,org.kde.dolphin.desktop,org.kde.discover.desktop
+
+[Favorites-org.kde.plasma.kickoff.favorites.instance-3-global]
+ordering=preferred://browser,org.kde.kontact.desktop,systemsettings.desktop,org.kde.dolphin.desktop,org.kde.discover.desktop
