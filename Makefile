@@ -31,9 +31,6 @@ install-bibata-cursor:
 install-flatpak-packages:
 	@sh ./install-flatpak-packages.sh
 
-install-gnome-extensions:
-	@sh ./scripts/install-gnome-extensions.sh
-
 install-nvm:
 	@sh ./scripts/install-nvm.sh
 
