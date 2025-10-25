@@ -15,7 +15,7 @@ sudo cp "$CONFIG_FILE" "$TARGET_FILE"
 
 echo "Fixing grub-btrfsd"
 if [[ -f "$GRUB_BTRFSD_CONFIG" ]]; then
-  sudo sed -i 's|^ExecStart=/usr/bin/grub-btrfsd /.snapshots --syslog|ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto|' "$GRUB_BTRFSD_CONFIG"
+  sudo sed -i 's|^ExecStart=/usr/bin/grub-btrfsd.*|ExecStart=/usr/bin/grub-btrfsd --syslog --timeshift-auto|' "$GRUB_BTRFSD_CONFIG"
   sudo systemctl stop grub-btrfsd.service
   sudo systemctl enable --now grub-btrfsd.service
   echo "btrfsd service fixed."
