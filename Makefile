@@ -4,9 +4,6 @@ all:
 copy-desktop-config:
 	@sh ./scripts/copy-desktop-config.sh
 
-copy-sddm-config:
-	@sh ./scripts/copy-sddm-config.sh
-
 copy-plasma-config:
 	@sh ./scripts/copy-plasma-config.sh
 
@@ -54,4 +51,3 @@ setup-swap:
 
 usermod:
 	@sh ./scripts/usermod.sh
-

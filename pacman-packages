@@ -73,6 +73,8 @@ plasma-desktop
 plasma-disks
 plasma-firewall
 plasma-integration
+plasma-keyboard
+plasma-login-manager
 plasma-nm
 plasma-pa
 plasma-systemmonitor
@@ -93,8 +95,6 @@ python-virtualenv
 python3
 ripgrep
 rust
-sddm
-sddm-kcm
 sonnet
 spectacle
 speech-dispatcher
