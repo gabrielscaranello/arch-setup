@@ -2,6 +2,7 @@ aspell
 aspell-en
 aspell-pt
 baobab
+base-devel
 bat
 btop
 cups
@@ -41,7 +42,6 @@ gnome-online-accounts
 gnome-session
 gnome-settings-daemon
 gnome-shell
-gnome-shell-extension-appindicator
 gnome-shell-extension-caffeine
 gnome-shell-extension-vitals
 gnome-system-monitor
@@ -90,6 +90,7 @@ python
 python-pip
 python-pipx
 python-virtualenv
+python3
 ripgrep
 rust
 showtime

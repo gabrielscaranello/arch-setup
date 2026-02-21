@@ -1,7 +1,7 @@
 #! /bin/bash
 
-NODE_VERSION=22
-NVM_VERSION=0.40.1
+NODE_VERSION=24
+NVM_VERSION=0.40.3
 NPM_PACKAGES=$(tr '\n' ' ' <"$PWD/npm-packages")
 
 echo "Installing NVM and Node..."
@@ -16,6 +16,6 @@ echo "Installing Node ${NODE_VERSION}..."
 nvm install "${NODE_VERSION}"
 
 echo "Installing packages..."
-echo "$NPM_PACKAGES" | xargs npm i -g 
+echo "$NPM_PACKAGES" | xargs npm i -g
 
 echo "NVM and Node installed."

@@ -57,4 +57,3 @@ setup-swap:
 
 usermod:
 	@sh ./scripts/usermod.sh
-
