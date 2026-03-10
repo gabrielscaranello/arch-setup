@@ -1,98 +1,74 @@
 [org/gnome/TextEditor]
+highlight-current-line=true
+indent-style='space'
 restore-session=false
-style-scheme='Adwaita-dark'
+show-line-numbers=false
+show-map=false
+use-system-font=true
 
-[org/gnome/desktop/background]
-color-shading-type='solid'
-picture-options='zoom'
-primary-color='#000000000000'
-secondary-color='#000000000000'
+[org/gnome/desktop/app-folders]
+folder-children=['System', 'Utilities', 'YaST', '0940248a-b3cb-4922-937d-05bcc29b834f', 'b8279844-5ac4-4d3e-8187-2794b7332933']
+
+[org/gnome/desktop/app-folders/folders/0940248a-b3cb-4922-937d-05bcc29b834f]
+apps=['com.vysp3r.ProtonPlus.desktop']
+name='Games'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/System]
+apps=['yelp.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.baobab.desktop', 'nm-connection-editor.desktop', 'gufw.desktop', 'org.gnome.Settings.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.DiskUtility.desktop', 'im-config.desktop', 'org.gnome.Logs.desktop']
+name='X-GNOME-Shell-System.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['btop.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.FileRoller.desktop', 'org.flameshot.Flameshot.desktop', 'org.gnome.font-viewer.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'nvim.desktop', 'org.gnome.clocks.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Showtime.desktop', 'timeshift-gtk.desktop', 'org.gnome.Papers.desktop', 'io.github.celluloid_player.Celluloid.desktop', 'org.gnome.Connections.desktop', 'org.gnome.Evince.desktop', 'org.gnome.Loupe.desktop']
+name='X-GNOME-Shell-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/b8279844-5ac4-4d3e-8187-2794b7332933]
+apps=['io.dbeaver.DBeaverCommunity.desktop', 'com.mongodb.Compass.desktop']
+name='Develop'
+translate=false
 
 [org/gnome/desktop/datetime]
-automatic-timezone=false
+automatic-timezone=true
 
 [org/gnome/desktop/interface]
-accent-color='blue'
 clock-show-seconds=true
 clock-show-weekday=true
-color-scheme='prefer-dark'
-cursor-size=20
-cursor-theme='Bibata-Modern-Ice'
-gtk-theme='adw-gtk3-dark'
-icon-theme='Papirus-Dark'
-toolkit-accessibility=false
-
-[org/gnome/desktop/notifications/application/firefox]
-application-id='firefox.desktop'
-
-[org/gnome/desktop/notifications/application/gnome-power-panel]
-application-id='gnome-power-panel.desktop'
-
-[org/gnome/desktop/notifications/application/google-chrome]
-application-id='google-chrome.desktop'
-
-[org/gnome/desktop/notifications/application/org-flameshot-flameshot]
-application-id='org.flameshot.Flameshot.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-extensions]
-application-id='org.gnome.Extensions.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-nautilus]
-application-id='org.gnome.Nautilus.desktop'
-
-[org/gnome/desktop/notifications/application/org-gnome-software]
-application-id='org.gnome.Software.desktop'
-
-[org/gnome/desktop/notifications/application/org-telegram-desktop]
-application-id='org.telegram.desktop.desktop'
+font-name='Cantarell 11'
+gtk-enable-primary-paste=false
+monospace-font-name='JetBrainsMono Nerd Font 11'
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='flat'
-left-handed=false
 
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
-old-files-age=uint32 30
-recent-files-max-age=-1
+recent-files-max-age=30
 remember-recent-files=false
 remove-old-temp-files=true
 remove-old-trash-files=true
 
-[org/gnome/desktop/screensaver]
-color-shading-type='solid'
-picture-options='zoom'
-primary-color='#000000000000'
-secondary-color='#000000000000'
-
 [org/gnome/desktop/search-providers]
-disabled=['org.gnome.Characters.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Contacts.desktop']
+disabled=['org.gnome.clocks.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
-
-[org/gnome/desktop/session]
-idle-delay=uint32 300
 
 [org/gnome/desktop/sound]
 event-sounds=false
 theme-name='__custom'
 
 [org/gnome/desktop/wm/keybindings]
-maximize=@as []
 show-desktop=['<Super>d']
-unmaximize=@as []
 
 [org/gnome/desktop/wm/preferences]
 action-middle-click-titlebar='minimize'
-theme='adw-gtk3-dark'
 
-[org/gnome/mutter]
-center-new-windows=true
-edge-tiling=false
-
-[org/gnome/mutter/keybindings]
-toggle-tiled-left=@as []
-toggle-tiled-right=@as []
+[org/gnome/gnome-system-monitor]
+cpu-colors=[(uint32 0, '#e01b24'), (1, '#ff7800'), (2, '#f6d32d'), (3, '#33d17a'), (4, '#26a269'), (5, '#62a0ea'), (6, '#1c71d8'), (7, '#613583'), (8, '#9141ac'), (9, '#c061cb'), (10, '#ffbe6f'), (11, '#f9f06b'), (12, '#8ff0a4'), (13, '#2ec27e'), (14, '#1a5fb4'), (15, '#c061cb'), (16, '#7999f33296bd'), (17, '#f33279997ff0'), (18, '#7999a36bf332'), (19, '#c6e6f3327999'), (20, '#f3327999ea62'), (21, '#7999f332d887'), (22, '#f332b50b7999'), (23, '#91907999f332')]
+show-dependencies=false
+show-whose-processes='user'
 
 [org/gnome/nautilus/icon-view]
 default-zoom-level='small-plus'
@@ -102,22 +78,8 @@ use-tree-view=true
 
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
-fts-enabled=false
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
-show-create-link=true
-show-delete-permanently=true
-
-[org/gnome/papers]
-night-mode=false
-
-[org/gnome/papers/default]
-annot-color='yellow'
-continuous=true
-dual-page=false
-dual-page-odd-left=false
-enable-spellchecking=true
-show-sidebar=true
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
@@ -132,13 +94,18 @@ home=['<Super>e']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Control><Alt>t'
-command='kitty --start-as maximized'
+command='kitty'
 name='Kitty'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-binding='<Control><Super>s'
+binding='<Control><Alt>s'
 command='flameshot gui'
 name='Flameshot'
+
+[org/gnome/shell]
+app-picker-layout=[{'org.gnome.Calculator.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'org.gnome.Characters.desktop': <{'position': <2>}>, 'org.gnome.TextEditor.desktop': <{'position': <3>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <4>}>, 'System': <{'position': <8>}>, 'Utilities': <{'position': <9>}>}]
+enabled-extensions=['logomenu@aryan_k', 'caffeine@patapon.info', 'color-picker@tuberry', 'CoverflowAltTab@palatis.blogspot.com', 'emoji-copy@felipeftn', 'Hide_Activities@shay.shayel.org', 'top-bar-organizer@julian.gse.jsts.xyz', 'Vitals@CoreCoding.com', 'window-title-is-back@fthx', 'AlphabeticalAppGrid@stuarthayhurst', 'clipboard-indicator@tudmotu.com', 'status-tray@keithvassallo.com', 'blur-my-shell@aunetx', 'arch-update@RaphaelRochet']
+favorite-apps=['org.gnome.Nautilus.desktop', 'kitty.desktop', 'code.desktop', 'firefox.desktop', 'google-chrome.desktop', 'md.obsidian.Obsidian.desktop', 'org.onlyoffice.desktopeditors.desktop', 'org.gimp.GIMP.desktop', 'com.discordapp.Discord.desktop', 'org.telegram.desktop.desktop']
 
 [org/gnome/shell/extensions/Logo-menu]
 hide-softwarecentre=true
@@ -159,6 +126,10 @@ package-info-cmd='xdg-open https://www.archlinux.org/packages/%2$s/%3$s/%1$s'
 strip-versions=false
 update-cmd='kitty --start-as=maximized --title "Update packages" -1 sh -c  "yay; flatpak update; echo Done - Press enter to exit; read"'
 use-buildin-icons=true
+
+[org/gnome/shell/extensions/alphabetical-app-grid]
+folder-order-position='end'
+sort-folder-contents=true
 
 [org/gnome/shell/extensions/blur-my-shell]
 settings-version=2
@@ -205,18 +176,15 @@ unblur-in-overview=true
 blur=true
 pipeline='pipeline_default'
 
-[org/gnome/shell/extensions/blur-my-shell/screenshot]
-blur=true
-pipeline='pipeline_default'
-
 [org/gnome/shell/extensions/caffeine]
 countdown-timer=0
 duration-timer=2
 indicator-position-max=2
 restore-state=true
 show-indicator='only-active'
-toggle-state=true
-user-enabled=true
+
+[org/gnome/shell/extensions/clipboard-indicator]
+toggle-menu=['<Control>backslash']
 
 [org/gnome/shell/extensions/coverflowalttab]
 animation-time=0.25
@@ -234,6 +202,14 @@ randomize-animation-times=false
 switcher-background-color=(1.0, 1.0, 1.0)
 switcher-looping-method='Flip Stack'
 switcher-style='Coverflow'
+
+[org/gnome/shell/extensions/status-tray]
+icon-mode='original'
+
+[org/gnome/shell/extensions/top-bar-organizer]
+center-box-order=['dateMenu']
+left-box-order=['LogoMenu', 'vitalsMenu', 'activities']
+right-box-order=['StatusTray-org.kde.StatusNotifierItem-17976-2/StatusNotifierItem', 'StatusTray-org.kde.StatusNotifierItem-17735-2/StatusNotifierItem', 'StatusTray-:1.222/org/ayatana/NotificationItem/steam', 'StatusTray-:1.192/StatusNotifierItem', 'StatusTray-:1.181/StatusNotifierItem', 'clipboardIndicator', 'emoji-copy@felipeftn', 'color-picker@tuberry', 'tiling-assistant@leleat-on-github', 'screenRecording', 'screenSharing', 'dwellClick', 'a11y', 'keyboard', 'quickSettings']
 
 [org/gnome/shell/extensions/vitals]
 alphabetize=true
