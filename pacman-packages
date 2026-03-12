@@ -54,7 +54,6 @@ grub-btrfs
 gst-libav
 gst-plugin-pipewire
 gst-plugins-good
-gtk-engine-murrine
 gufw
 gvfs
 gvfs-afc
