@@ -1,8 +1,0 @@
-[Plugins]
-org.kde.ActivityManager.ResourceScoringEnabled=false
-
-[activities]
-1468a5b8-6440-43df-8320-781f5e91fc67=Padrão
-
-[main]
-currentActivity=1468a5b8-6440-43df-8320-781f5e91fc67

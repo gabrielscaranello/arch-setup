@@ -24,7 +24,6 @@ sudo mkdir -p "$TARGET_DIR"
 sudo mv "$EXTRACT_DIR/$CURSOR_NAME" "$TARGET_DIR"
 
 # Set cursor
-gsettings set org.gnome.desktop.interface cursor-theme "$CURSOR_NAME"
 sudo cp -r "$PWD/plasma/icons/default" "$TARGET_DIR"
 sudo ln -sf "$TARGET_DIR/$CURSOR_NAME/cursors" "$TARGET_DIR/default/cursors"
 
